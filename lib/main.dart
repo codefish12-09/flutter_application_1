@@ -129,6 +129,11 @@ class _MyHomePageState extends State<MyHomePage> {
               child: Text("good"),
               onPressed: () {},
             ),
+            Image(
+              image: NetworkImage(
+              "https://img0.baidu.com/it/u=2553809035,1545860335&fm=253&fmt=auto&app=120&f=JPEG?w=800&h=800"),
+              width: 100.0,
+)
 
           ],
         ),

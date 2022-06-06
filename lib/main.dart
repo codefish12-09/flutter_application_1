@@ -1,7 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-
 void main() {
   runApp(const MyApp());
 }
@@ -12,6 +11,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
@@ -96,6 +96,7 @@ class _MyHomePageState extends State<MyHomePage> {
           // axis because Columns are vertical (the cross axis would be
           // horizontal).
           mainAxisAlignment: MainAxisAlignment.center,
+          
           children: <Widget>[
             const Text(
               'You have pushed the button this many times:',
@@ -104,12 +105,12 @@ class _MyHomePageState extends State<MyHomePage> {
               '$_counter',
               style: Theme.of(context).textTheme.headline4,
             ),
-            Text("Hello world",
+            Text("Hello world! I'm Zhang shiyu. ",
               textAlign: TextAlign.left,
               style: TextStyle(
               color: Colors.blue,
               fontSize:30,
-              height: 1.2,  
+              height: 2,  
               fontFamily: "Courier",
               background: Paint()..color=Colors.yellow,
               decoration:TextDecoration.underline,
@@ -117,16 +118,16 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             ),
 
-            Text("Hello world! I'm Zhang shiyu. "*1,
-              maxLines: 1,
-              overflow: TextOverflow.ellipsis,
-            ),
+            // Text("Hello world! I'm Zhang shiyu. "*1,
+            //   maxLines: 1,
+            //   overflow: TextOverflow.ellipsis,
+            // ),
 
-            Text("Hello world",
-              textScaleFactor: 1.5,
-            ),
+            // Text("Hello world",
+            //   textScaleFactor: 1.5,
+            // ),
             ElevatedButton(
-              child: Text("good"),
+              child: Text("welcome!"),
               onPressed: () {},
             ),
             Image(
@@ -146,3 +147,5 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
+
+
